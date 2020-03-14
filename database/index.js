@@ -3,20 +3,20 @@ const mongoose = require('mongoose');
 
 mongoose.connect('mongodb://localhost:27017/wftodo', { useNewUrlParser: true, useUnifiedTopology: true });
 
-const wfSchema = mongoose.Schema({
-
+const waifuSchema = mongoose.Schema({
+  name: String,
+  age: Number,
+  height: Number,
+  weight: Number,
+  hairstyle: String,
+  skintone: String,
+  cupsize: String,
+  attribute: String,
+  disposition: String,
+  vice: String,
 });
 
-// const agentSchema = mongoose.Schema({
-//   name: String,
-//   title: String,
-//   rating: Number,
-//   numSales: Number,
-//   phoneNum: String,
-// });
-
-// const Property = mongoose.model('Property', propertySchema);
-// const Agent = mongoose.model('Agent', agentSchema);
+const Waifu = mongoose.model('Waifu', waifuSchema);
 
 const save = (document, next) => {
   document.save((err) => {
@@ -28,19 +28,18 @@ const save = (document, next) => {
   });
 };
 
-// const find = (options, next) => {
-//   Property.find(options, (err, docs) => {
-//     if (err) {
-//       console.log(err);
-//     } else {
-//       next(docs);
-//     }
-//   });
-// };
+const findWaifus = (options, next) => {
+  Waifu.find(options, (err, docs) => {
+    if (err) {
+      console.log(err);
+    } else {
+      next(docs);
+    }
+  });
+};
 
 module.exports = {
-  // Property,
-  // Agent,
+  Waifu,
   save,
-  // find,
+  findWaifus,
 };

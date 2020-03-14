@@ -1,19 +1,31 @@
 const { Waifu } = require('./index.js');
+const {
+  names,
+  hairstyleFront,
+  hairstyleBack,
+  skintone,
+  cupsize,
+  attribute,
+  disposition,
+  vice,
+  generateRandomNum,
+  generateRandomFrom,
+} = require('./pool.js');
 
 const seedWaifus = (quantity) => {
   const line = [];
   for (let i = 0; i < quantity; i += 1) {
     line.push(new Waifu({
-      name: 'Lisette',
-      age: 22,
-      height: 167,
-      weight: 54,
-      hairstyle: 'face framing swept bangs with a tight bun',
-      skintone: 'pale',
-      cupsize: 'B',
-      attribute: 'replicant',
-      disposition: 'subservient',
-      vice: 'smokes',
+      name: generateRandomFrom(names),
+      age: generateRandomNum(18, 45),
+      height: generateRandomNum(152, 180),
+      weight: generateRandomNum(49, 80),
+      hairstyle: `${generateRandomFrom(hairstyleFront)} with ${generateRandomFrom(hairstyleBack)}`,
+      skintone: generateRandomFrom(skintone),
+      cupsize: generateRandomFrom(cupsize),
+      attribute: generateRandomFrom(attribute),
+      disposition: generateRandomFrom(disposition),
+      vice: generateRandomFrom(vice),
     }));
   }
   return line;

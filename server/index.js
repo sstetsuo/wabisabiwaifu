@@ -13,6 +13,6 @@ app.listen(port, () => {
 app.use(express.static(path.join(__dirname, '../client/dist')));
 
 app.get('/api/testWaifu', (req, res) => {
-  const data = seedWaifus(10);
+  const data = seedWaifus(100);
   res.send(data);
 });

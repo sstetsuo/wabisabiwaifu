@@ -17,14 +17,14 @@ const seedWaifus = (quantity) => {
   for (let i = 0; i < quantity; i += 1) {
     line.push(new Waifu({
       name: generateRandomFrom(names),
-      age: generateRandomNum(18, 45),
+      age: generateRandomNum(18, 40),
       height: generateRandomNum(152, 180),
       weight: generateRandomNum(49, 80),
       hairstyle: `${generateRandomFrom(hairstyleFront)} with ${generateRandomFrom(hairstyleBack)}`,
       skintone: generateRandomFrom(skintone),
       cupsize: generateRandomFrom(cupsize),
-      attribute: generateRandomFrom(attribute),
       disposition: generateRandomFrom(disposition),
+      attribute: generateRandomFrom(attribute),
       vice: generateRandomFrom(vice),
     }));
   }

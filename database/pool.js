@@ -1,3 +1,9 @@
+const generateRandomNum = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
+const generateRandomFrom = (arr) => {
+  const val = arr[generateRandomNum(0, arr.length - 1)];
+  return val;
+};
+
 const names = [
   'Lisette',
   'Cecelia',
@@ -115,7 +121,7 @@ const hairstyleBack = [
   'deux mandu',
   'a french braid',
   'a long bob',
-  'a shoft bob',
+  'a short bob',
   'shoulder length hair',
   'waist length hair',
   'a short ponytail',
@@ -139,10 +145,10 @@ const skintone = [
 ];
 
 const cupsize = [
-  'AA',
-  'A', 'A', 'A', 'A', 'A',
-  'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B',
-  'C', 'C', 'C', 'C',
+  'AA', 'AA', 'AA', 'AA',
+  'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A',
+  'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B',
+  'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C',
   'D', 'D', 'D',
   'E', 'E',
   'F',
@@ -219,7 +225,6 @@ const attribute = [
   'fishy trap',
   'alien babe',
   'ghost',
-  'jailbait',
   'murderer',
   'sex doll',
   'rich girl',
@@ -229,6 +234,7 @@ const attribute = [
 
 const disposition = [
   'adorable',
+  'freaky',
   'strict',
   'teasing',
   'tsundere',
@@ -339,12 +345,6 @@ const vice = [
   'pierced',
   'super tattooed',
 ];
-
-const generateRandomNum = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
-const generateRandomFrom = (arr) => {
-  const val = arr[generateRandomNum(0, arr.length)];
-  return val;
-};
 
 module.exports = {
   names,

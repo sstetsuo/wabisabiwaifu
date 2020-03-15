@@ -69,15 +69,14 @@ const names = [
   'Marie',
   'Michelle',
   'Odette',
-  'Olive',
-  'Pauline',
+  'Olivia',
+  'Paulina',
   'Penelope',
   'Rhodes',
   'Rochelle',
   'Aubrey',
   'Avery',
   'Blair',
-  'Blaine',
   'Bailey',
   'Bryce',
   'Cody',
@@ -91,7 +90,6 @@ const names = [
   'Ridley',
   'Samus',
   'Robin',
-  'Ryan',
   'Jill',
   'Paris',
   'Morgan',
@@ -158,8 +156,10 @@ const cupsize = [
 const attribute = [
   'nun',
   'virgin',
-  'office',
+  'office lady',
   'researcher',
+  'succubus',
+  'angel',
   'gamer',
   'cosplayer',
   'pilot',
@@ -219,6 +219,7 @@ const attribute = [
   'furry',
   'catgirl',
   'vampire',
+  'figment of your imagination',
   'idol',
   'miss universe',
   'trap',
@@ -344,7 +345,19 @@ const vice = [
   'suicidal',
   'pierced',
   'super tattooed',
+  'racist',
+  'SJW',
+  'loud',
+  'hates videos games',
+  'hates anime',
+  'doesn\'t want children',
+  'terminally ill',
+  'gun nut',
 ];
+
+// const kink = [
+
+// ];
 
 module.exports = {
   names,
@@ -357,4 +370,4 @@ module.exports = {
   vice,
   generateRandomNum,
   generateRandomFrom,
-}
+};

@@ -1,6 +1,7 @@
 const { Waifu } = require('./index.js');
 const {
   names,
+  hairColor,
   hairstyleFront,
   hairstyleBack,
   skintone,
@@ -20,7 +21,8 @@ const seedWaifus = (quantity) => {
       age: generateRandomNum(18, 40),
       height: generateRandomNum(152, 180),
       weight: generateRandomNum(49, 80),
-      hairstyle: `${generateRandomFrom(hairstyleFront)} with ${generateRandomFrom(hairstyleBack)}`,
+      hairColor: generateRandomFrom(hairColor),
+      hairstyle: `${generateRandomFrom(hairstyleFront)} and ${generateRandomFrom(hairstyleBack)}`,
       skintone: generateRandomFrom(skintone),
       cupsize: generateRandomFrom(cupsize),
       disposition: generateRandomFrom(disposition),

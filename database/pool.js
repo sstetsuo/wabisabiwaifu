@@ -97,6 +97,33 @@ const names = [
   'Jordan',
 ];
 
+const hairColor = [
+  'white',
+  'platinum',
+  'warm gray',
+  'cool gray',
+  'ash gray',
+  'blonde',
+  'strawberry blonde',
+  'dirty blonde',
+  'auburn',
+  'red',
+  'light brown',
+  'brunette',
+  'dark brown',
+  'pink',
+  'lime green',
+  'dark green',
+  'pale blue',
+  'baby blue',
+  'purple',
+  'violet',
+  'bright yellow',
+  'black',
+  'warm black',
+  'jet black',
+];
+
 const hairstyleFront = [
   'side swept bangs',
   'face framing bangs',
@@ -361,6 +388,7 @@ const vice = [
 
 module.exports = {
   names,
+  hairColor,
   hairstyleFront,
   hairstyleBack,
   skintone,

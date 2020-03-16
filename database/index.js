@@ -8,6 +8,7 @@ const waifuSchema = mongoose.Schema({
   age: Number,
   height: Number,
   weight: Number,
+  hairColor: String,
   hairstyle: String,
   skintone: String,
   cupsize: String,

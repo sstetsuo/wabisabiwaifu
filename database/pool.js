@@ -158,15 +158,15 @@ const hairstyleBack = [
 ];
 
 const skintone = [
-  'porcelain',
-  'pale',
-  'olive',
-  'rosy',
-  'sunkissed',
-  'fair',
-  'golden',
-  'bronzed',
-  'cocoa',
+  'Porcelain',
+  'Pale',
+  'Olive',
+  'Rosy',
+  'Sunkissed',
+  'Fair',
+  'Golden',
+  'Bronzed',
+  'Cocoa',
 ];
 
 const cupsize = [

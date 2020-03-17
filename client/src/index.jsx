@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Card from './components/card';
+import Cards from './components/cards';
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 // const title = 'React with Webpack and Babel YAY';
 ReactDOM.render(
-  <Card />,
+  <Cards />,
   document.getElementById('app'),
 );

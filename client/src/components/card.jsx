@@ -29,13 +29,13 @@ class Card extends Component {
           <p className="card-text text-secondary">
             {`Age: ${waifu.age}, Height ${waifu.height} cm, Weight: ${waifu.weight} kg`}
           </p>
-          <p>
+          <p className="card-text text-secondary">
             {`Skintone: ${waifu.skintone}, Cupsize ${waifu.cupsize}`}
           </p>
-          <p>
+          <p className="card-text text-secondary">
             {`Her hair is ${waifu.hairColor}, worn with ${waifu.hairstyle}.`}
           </p>
-          <p>
+          <p className="card-text text-secondary">
             {`She is a ${waifu.disposition} ${waifu.attribute} and ${waifu.vice}.`}
           </p>
           {/* <a href="#" className="btn btn-outline-success">TEST</a> */}

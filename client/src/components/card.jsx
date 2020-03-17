@@ -1,17 +1,17 @@
 /* eslint-disable no-console */
-import React, { Component } from "react";
-import $ from "jquery";
+import React, { Component } from 'react';
+import $ from 'jquery';
 
 class Card extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      waifu: {}
+      waifu: {},
     };
   }
 
   componentDidMount() {
-    $.get("/api/testWaifu", data => {
+    $.get('/api/testWaifu', (data) => {
       console.log(data[0]);
       this.setState({ waifu: data[0] });
     });

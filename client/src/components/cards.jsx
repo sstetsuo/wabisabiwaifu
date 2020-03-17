@@ -1,5 +1,4 @@
 import React from 'react';
-// import Card from './card';
 import CardSpec from './cardSpec';
 import './card-style.css';
 
@@ -9,12 +8,6 @@ const Cards = () => (
       <div className="col-md-4">
         <CardSpec />
       </div>
-      {/* <div className="col-md-4">
-        <Card />
-      </div>
-      <div className="col-md-4">
-        <Card />
-      </div> */}
     </div>
   </div>
 );

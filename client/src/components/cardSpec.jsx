@@ -38,7 +38,12 @@ class CardSpec extends Component {
               </tr>
               <tr>
                 <td colSpan="3">
-                  {`She is a ${waifu.disposition} ${waifu.attribute} and ${waifu.vice}.`}
+                  <div className="text-spec">
+                    {`${waifu.name} likes her hair with ${waifu.hairstyle}.`}
+                  </div>
+                  <div className="text-flavor">
+                    {`She is ${waifu.disposition} ${waifu.attribute} ${waifu.vice}.`}
+                  </div>
                 </td>
               </tr>
             </tbody>

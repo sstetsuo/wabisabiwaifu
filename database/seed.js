@@ -15,13 +15,20 @@ const {
 
 // need relational pools for fewer contraditions
 
+const toFeet = (inches) => {
+  const numFeet = Math.floor(inches / 12);
+  const remainingInches = inches % 12;
+
+  return `${numFeet}'-${remainingInches}"`;
+};
+
 const seedWaifus = (quantity) => {
   const line = [];
   for (let i = 0; i < quantity; i += 1) {
     line.push(new Waifu({
       name: generateRandomFrom(names),
       age: generateRandomNum(18, 40),
-      height: generateRandomNum(60, 72), // need curve based probability
+      height: toFeet(generateRandomNum(60, 72)), // need curve based probability
       weight: generateRandomNum(110, 160), // need curve based probability
       hairColor: generateRandomFrom(hairColor),
       hairstyle: `${generateRandomFrom(hairstyleFront)} and ${generateRandomFrom(hairstyleBack)}`,

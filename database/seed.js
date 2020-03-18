@@ -13,14 +13,16 @@ const {
   generateRandomFrom,
 } = require('./pool.js');
 
+// need relational pools for fewer contraditions
+
 const seedWaifus = (quantity) => {
   const line = [];
   for (let i = 0; i < quantity; i += 1) {
     line.push(new Waifu({
       name: generateRandomFrom(names),
       age: generateRandomNum(18, 40),
-      height: generateRandomNum(152, 180),
-      weight: generateRandomNum(49, 80),
+      height: generateRandomNum(60, 72), // need curve based probability
+      weight: generateRandomNum(110, 160), // need curve based probability
       hairColor: generateRandomFrom(hairColor),
       hairstyle: `${generateRandomFrom(hairstyleFront)} and ${generateRandomFrom(hairstyleBack)}`,
       skintone: generateRandomFrom(skintone),

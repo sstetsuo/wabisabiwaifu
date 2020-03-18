@@ -402,6 +402,7 @@ module.exports = {
   attribute,
   disposition,
   vice,
+  kink,
   generateRandomNum,
   generateRandomFrom,
 };

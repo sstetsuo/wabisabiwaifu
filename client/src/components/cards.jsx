@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import CardSpec from './cardSpec';
 import AddCard from './addCard';
-import './card-style.css';
+import '../styles/card-style.css';
 
 class Cards extends Component {
   constructor(props) {

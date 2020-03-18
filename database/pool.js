@@ -4,6 +4,15 @@ const generateRandomFrom = (arr) => {
   return val;
 };
 
+// Hair: Green, Twin Drills w/ Long Sidelocks
+// Eyes: Green
+// Body Type: Tall
+// Bust Size: F
+// Personality: Childish
+// Clothes: Hoodie/Jacket w/ Connected Gloves
+// Extras: Choker
+// Name: Ayane
+
 const names = [
   'Lisette',
   'Cecelia',
@@ -208,7 +217,7 @@ const attribute = [
   'supermodel',
   'fashion designer',
   'entrepreneur',
-  'CEO',
+  'police officer',
   'barista',
   'bartender',
   'hostess',
@@ -292,8 +301,7 @@ const disposition = [
   'a ditsy',
   'a fit',
   'a curvy',
-  'a psycho',
-  'a perfectionist',
+  'a psychotic',
   'a controlling',
   'a cheating',
   'a smothering',
@@ -301,10 +309,6 @@ const disposition = [
   'a laid back',
   'a constantly high',
   'a constantly drunk',
-  'a perfect',
-  'a cock-hungry',
-  'a cum-hungry',
-  'a bondage-loving',
   'a horny',
   'an asexual',
   'a bisexual',
@@ -382,9 +386,11 @@ const vice = [
   'who\'s also a gun nut',
 ];
 
-// const kink = [
-
-// ];
+const kink = [
+  'a cock-hungry',
+  'a cum-hungry',
+  'a bondage-loving',
+];
 
 module.exports = {
   names,

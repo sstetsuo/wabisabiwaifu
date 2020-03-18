@@ -25,11 +25,12 @@ class CardSpec extends Component {
     return (
       <button type="button" className="card text-left" onClick={handleAdd}>
         <div className="card-body text-dark">
-          <h4 className="card-title">{waifu.name}</h4>
+          <span className="card-title">{waifu.name}</span>
+          <span className="text-spec age">{`Age ${waifu.age}`}</span>
           <table className="table">
             <tbody>
               <tr className="spec">
-                <td>{`Age: ${waifu.age}`}</td>
+                <td>{`Eye Color: ${waifu.eyeColor}`}</td>
                 <td>{`Height: ${waifu.height}`}</td>
                 <td>{`Weight: ${waifu.weight} lbs.`}</td>
               </tr>

@@ -106,6 +106,23 @@ const names = [
   'Jordan',
 ];
 
+const eyeColor = [
+  'warm gray',
+  'teal',
+  'blue',
+  'crimson',
+  'light brown',
+  'dark brown',
+  'pink',
+  'green',
+  'hazel',
+  'dark green',
+  'pale blue',
+  'baby blue',
+  'violet',
+  'yellow',
+];
+
 const hairColor = [
   'white',
   'platinum',
@@ -394,6 +411,7 @@ const kink = [
 
 module.exports = {
   names,
+  eyeColor,
   hairColor,
   hairstyleFront,
   hairstyleBack,

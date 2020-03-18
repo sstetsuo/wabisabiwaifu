@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-console */
 import React, { Component } from 'react';
 import $ from 'jquery';
@@ -19,9 +20,10 @@ class CardSpec extends Component {
 
   render() {
     const { waifu } = this.state;
+    const { handleAdd } = this.props;
 
     return (
-      <div className="card text-left">
+      <button type="button" className="card text-left" onClick={handleAdd}>
         <div className="card-body text-dark">
           <h4 className="card-title">{waifu.name}</h4>
           <table className="table">
@@ -42,14 +44,15 @@ class CardSpec extends Component {
                     {`${waifu.name} likes her hair with ${waifu.hairstyle}.`}
                   </div>
                   <div className="text-flavor">
-                    {`She is ${waifu.disposition} ${waifu.attribute} ${waifu.vice}.`}
+                    <span>{`She is ${waifu.disposition} ${waifu.attribute} `}</span>
+                    <span>{`${waifu.vice}.`}</span>
                   </div>
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
-      </div>
+      </button>
     );
   }
 }

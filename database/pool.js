@@ -6,11 +6,11 @@ const generateRandomFrom = (arr) => {
 
 // Hair: Green, Twin Drills w/ Long Sidelocks
 // Eyes: Green
-// Body Type: Tall
-// Bust Size: F
+// Body Type: Tall <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Implement
+// Bust Size: F <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Implement attr name chage
 // Personality: Childish
 // Clothes: Hoodie/Jacket w/ Connected Gloves
-// Extras: Choker
+// Extras: Choker <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Implement
 // Name: Ayane
 
 const names = [

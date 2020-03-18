@@ -31,7 +31,7 @@ class CardSpec extends Component {
               <tr className="spec">
                 <td>{`Age: ${waifu.age}`}</td>
                 <td>{`Height: ${waifu.height}`}</td>
-                <td>{`Weight: ${waifu.weight}`}</td>
+                <td>{`Weight: ${waifu.weight} lbs.`}</td>
               </tr>
               <tr className="spec">
                 <td>{`Skin: ${waifu.skintone}`}</td>

@@ -12,7 +12,7 @@ db.once('open', () => {
 const waifuSchema = mongoose.Schema({
   name: String,
   age: Number,
-  height: Number,
+  height: String,
   weight: Number,
   hairColor: String,
   hairstyle: String,

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import CardSpec from './cardSpec';
 import AddCard from './addCard';
@@ -24,10 +25,11 @@ class Cards extends Component {
 
   render() {
     const { added, key } = this.state;
+    const { handleSave } = this.props;
     let card;
 
     if (added) {
-      card = <CardSpec key={key} handleAdd={this.handleAdd} />;
+      card = <CardSpec key={key} handleAdd={this.handleAdd} handleSave={handleSave} />;
     } else {
       card = <AddCard handleAdd={this.handleAdd} />;
     }

@@ -20,7 +20,7 @@ class CardSpec extends Component {
 
   render() {
     const { waifu } = this.state;
-    const { handleAdd } = this.props;
+    const { handleAdd, handleSave } = this.props;
 
     return (
       <div className="card text-left">
@@ -53,7 +53,7 @@ class CardSpec extends Component {
             </tbody>
           </table>
         </div>
-        <button id="buttons" type="button" className="btn btn-light">Yes.</button>
+        <button id="buttons" type="button" className="btn btn-light" onClick={handleSave}>Yes.</button>
         <button id="buttons" type="button" className="btn btn-light" onClick={handleAdd}>She&apos;s not the one for me.</button>
       </div>
     );

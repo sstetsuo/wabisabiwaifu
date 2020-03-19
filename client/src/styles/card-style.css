@@ -3,9 +3,8 @@ table {
 }
 
 button {
-  width: 30rem;
-  height: 18.75rem;
-  padding-top: 6rem;
+  width: 25rem;
+  height: 25rem;
 }
 
 button:hover {
@@ -17,7 +16,8 @@ button:hover {
 }
 
 .card {
-  width: 30rem;
+  width: 25rem;
+  height: 25rem;
 }
 
 .spec {

@@ -8,7 +8,7 @@ button {
 }
 
 button:hover {
-  box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.153) !important;
+  box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.15) !important;
 }
 
 .age {

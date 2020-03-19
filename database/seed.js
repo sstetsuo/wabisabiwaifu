@@ -30,7 +30,7 @@ const seedWaifus = (quantity) => {
       name: generateRandomFrom(names),
       age: generateRandomNum(18, 40),
       height: toFeet(generateRandomNum(60, 72)), // need curve based probability
-      weight: generateRandomNum(110, 160), // need curve based probability
+      weight: generateRandomNum(110, 150), // need curve based probability
       eyeColor: generateRandomFrom(eyeColor),
       hairColor: generateRandomFrom(hairColor),
       hairstyle: `${generateRandomFrom(hairstyleFront)} and ${generateRandomFrom(hairstyleBack)}`,

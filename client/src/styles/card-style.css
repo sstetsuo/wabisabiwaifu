@@ -1,23 +1,40 @@
 table {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
-button {
+#ad {
   width: 25rem;
-  height: 25rem;
+  height: 30rem;
 }
 
-button:hover {
-  box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.153) !important;
+#ad:hover {
+  color: hotpink;
+  background-color: white;
+  box-shadow: 5px 10px 20px 1px rgba(200, 200, 200, 0.5) !important;
 }
 
-.age {
-  padding: 0.8rem;
+#buttons {
+  display: inline;
+  font-size: .8rem;
+  color: rgb(133, 133, 133);
+  background-color: rgb(241, 241, 241);
+  margin: .2rem;
+  padding: 0.1rem;
+}
+ 
+#buttons:hover {
+  color: white;
+  background-color: rgba(255, 88, 171, 0.5);
 }
 
 .card {
   width: 25rem;
-  height: 25rem;
+  height: 30rem;
+  box-shadow: 5px 10px 20px 1px rgba(200, 200, 200, 0.5) !important;
+}
+
+.age {
+  padding: 0.8rem;
 }
 
 .spec {
@@ -26,10 +43,6 @@ button:hover {
 
 .text-left {
   padding: 1.5rem;
-}
-
-.card:hover {
-  box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.153) !important;
 }
 
 .card-title {
@@ -43,7 +56,7 @@ button:hover {
 }
 
 .container-fluid {
-  padding-top: 9rem;
+  padding-top: 5rem;
 }
 
 .text-spec {

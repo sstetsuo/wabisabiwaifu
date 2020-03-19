@@ -20,10 +20,10 @@ class CardSpec extends Component {
 
   render() {
     const { waifu } = this.state;
-    const { handleAdd } = this.props;
+    const { handleAdd, handleSave } = this.props;
 
     return (
-      <button type="button" className="card text-left" onClick={handleAdd}>
+      <div className="card text-left">
         <div className="card-body text-dark">
           <span className="card-title">{waifu.name}</span>
           <span className="text-spec age">{`Age ${waifu.age}`}</span>
@@ -53,7 +53,9 @@ class CardSpec extends Component {
             </tbody>
           </table>
         </div>
-      </button>
+        <button id="buttons" type="button" className="btn btn-light" onClick={handleSave}>Yes.</button>
+        <button id="buttons" type="button" className="btn btn-light" onClick={handleAdd}>She&apos;s not the one for me.</button>
+      </div>
     );
   }
 }

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import CardSpec from './cardSpec';
 import AddCard from './addCard';
@@ -24,10 +25,11 @@ class Cards extends Component {
 
   render() {
     const { added, key } = this.state;
+    const { handleSave } = this.props;
     let card;
 
     if (added) {
-      card = <CardSpec key={key} handleAdd={this.handleAdd} />;
+      card = <CardSpec key={key} handleAdd={this.handleAdd} handleSave={handleSave} />;
     } else {
       card = <AddCard handleAdd={this.handleAdd} />;
     }
@@ -35,9 +37,7 @@ class Cards extends Component {
     return (
       <div className="container-fluid d-flex justify-content-center">
         <div className="row">
-          <div className="col-md-4">
-            {card}
-          </div>
+          {card}
         </div>
       </div>
     );

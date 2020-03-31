@@ -27,11 +27,11 @@ const waifuSchema = mongoose.Schema({
 const Waifu = mongoose.model('Waifu', waifuSchema);
 
 const save = (document) => {
-  document.save();
+  return document.save();
 };
 
 const findWaifus = (options) => {
-  Waifu.find(options);
+  return Waifu.find(options);
 };
 
 module.exports = {

@@ -1,4 +1,6 @@
-const { Waifu } = require('./index.js');
+/* eslint-disable no-console */
+const mongoose = require('mongoose');
+const { Waifu, save, findWaifus } = require('./index.js');
 const {
   names,
   eyeColor,
@@ -23,7 +25,7 @@ const toFeet = (inches) => {
   return `${numFeet}'-${remainingInches}"`;
 };
 
-const seedWaifus = (quantity) => {
+const randomWaifu = (quantity) => {
   const line = [];
   for (let i = 0; i < quantity; i += 1) {
     line.push(new Waifu({
@@ -44,6 +46,23 @@ const seedWaifus = (quantity) => {
   return line;
 };
 
+findWaifus({})
+  .then((docs) => {
+    const quantity = 1000 - docs.length;
+    if (docs.length >= 0 && docs.length < 1000) {
+      const data = randomWaifu(quantity);
+      const saves = data.map((waifu) => save(waifu));
+      Promise.all(saves)
+        .then(() => {
+          console.log(`Database is seeded with ${quantity} waifus`);
+          mongoose.connection.close();
+        });
+    } else {
+      console.log('Database contains sufficient seeded data');
+      mongoose.connection.close();
+    }
+  });
+
 module.exports = {
-  seedWaifus,
+  randomWaifu,
 };

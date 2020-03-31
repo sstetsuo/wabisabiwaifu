@@ -1,12 +1,12 @@
 /* eslint-disable no-console */
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/wftodo', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost:27017/wabisabiwaifu', { useNewUrlParser: true, useUnifiedTopology: true });
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', () => {
-  console.log('Connected to MongoDB:wftodo...');
+  console.log('Connected to MongoDB:wabisabiwaifu...');
 });
 
 const waifuSchema = mongoose.Schema({
@@ -26,24 +26,12 @@ const waifuSchema = mongoose.Schema({
 
 const Waifu = mongoose.model('Waifu', waifuSchema);
 
-const save = (document, next) => {
-  document.save((err) => {
-    if (err) {
-      console.error(err);
-    } else {
-      next();
-    }
-  });
+const save = (document) => {
+  document.save();
 };
 
-const findWaifus = (options, next) => {
-  Waifu.find(options, (err, docs) => {
-    if (err) {
-      console.log(err);
-    } else {
-      next(docs);
-    }
-  });
+const findWaifus = (options) => {
+  Waifu.find(options);
 };
 
 module.exports = {

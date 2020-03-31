@@ -11,7 +11,6 @@ class Cards extends Component {
       waifus: [],
       waifu: {},
       added: false,
-      key: 0,
     };
 
     this.handleAdd = this.handleAdd.bind(this);
@@ -24,10 +23,7 @@ class Cards extends Component {
   }
 
   handleAdd() {
-    const { added, waifus, key } = this.state;
-    if (added === true) {
-      this.setState({ key: key + 1 });
-    }
+    const { waifus } = this.state;
     const randomIndex = Math.floor(Math.random() * waifus.length);
     const waifu = waifus.splice(randomIndex, 1)[0];
     this.setState({
@@ -37,11 +33,11 @@ class Cards extends Component {
   }
 
   render() {
-    const { added, waifu, key } = this.state;
+    const { added, waifu } = this.state;
     let card;
 
     if (added) {
-      card = <CardSpec key={key} waifu={waifu} handleAdd={this.handleAdd} />;
+      card = <CardSpec waifu={waifu} handleAdd={this.handleAdd} />;
     } else {
       card = <AddCard handleAdd={this.handleAdd} />;
     }

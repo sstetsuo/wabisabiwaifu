@@ -10,7 +10,7 @@
     "reset": "node ./database/reset.js",
     "start": "nodemon server"
   },
-  "author": "",
+  "author": "sstetsuo",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.4.1",

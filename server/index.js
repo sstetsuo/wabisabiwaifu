@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 const express = require('express');
 const path = require('path');
-const { seedWaifus } = require('../database/seed.js');
+const { randomWaifu } = require('../database/seed.js');
 
 const app = express();
 const port = 5000;
@@ -13,6 +13,6 @@ app.listen(port, () => {
 app.use(express.static(path.join(__dirname, '../client/dist')));
 
 app.get('/api/testWaifu', (req, res) => {
-  const data = seedWaifus(1);
+  const data = randomWaifu(1);
   res.send(data);
 });

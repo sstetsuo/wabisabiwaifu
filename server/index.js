@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 const express = require('express');
 const path = require('path');
+// serverside randomization only
 // const { randomWaifu } = require('../database/seed.js');
 const { findWaifus } = require('../database/index.js');
 
@@ -13,6 +14,7 @@ app.listen(port, () => {
 
 app.use(express.static(path.join(__dirname, '../client/dist')));
 
+// serverside randomization only
 // app.get('/api/testWaifu', (req, res) => {
 //   const data = randomWaifu(1);
 //   res.send(data);

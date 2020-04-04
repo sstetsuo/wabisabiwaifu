@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 import CardSpec from './cardSpec';
 import AddCard from './addCard';
-import '../styles/card-style.css';
 
 class Cards extends Component {
   constructor(props) {

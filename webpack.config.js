@@ -39,4 +39,8 @@ module.exports = {
     filename: 'bundle.js',
     path: DIST_DIR,
   },
+  devServer: {
+    contentBase: './client/dist',
+    port: 4445,
+  },
 };

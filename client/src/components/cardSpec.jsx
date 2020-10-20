@@ -3,7 +3,7 @@
 import React from 'react';
 
 const CardSpec = ({ handleAdd, waifu }) => (
-  <button key={waifu.id} type="button" className="card text-left" onClick={handleAdd}>
+  <div key={waifu.id} className="card text-left" onClick={handleAdd}>
     <div className="card-body text-dark">
       <span className="card-title">{waifu.name}</span>
       <span className="text-spec age">{`Age ${waifu.age}`}</span>
@@ -33,7 +33,7 @@ const CardSpec = ({ handleAdd, waifu }) => (
         </tbody>
       </table>
     </div>
-  </button>
+  </div>
 );
 
 export default CardSpec;

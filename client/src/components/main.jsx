@@ -3,7 +3,7 @@ import $ from 'jquery';
 import CardSpec from './cardSpec';
 import AddCard from './addCard';
 
-class Cards extends Component {
+class Main extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -53,4 +53,4 @@ class Cards extends Component {
   }
 }
 
-export default Cards;
+export default Main;

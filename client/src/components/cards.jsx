@@ -7,7 +7,6 @@ class Cards extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      waifus: [],
       waifu: {},
       added: false,
     };
@@ -16,17 +15,18 @@ class Cards extends Component {
   }
 
   componentDidMount() {
-    $.get('/api/loadWaifus', (waifus) => {
-      this.setState({ waifus });
+    this.fetchWaifu();
+  }
+
+  fetchWaifu() {
+    $.get('/api/loadWaifu', (waifu) => {
+      this.setState({ waifu });
     });
   }
 
   handleAdd() {
-    const { waifus } = this.state;
-    const randomIndex = Math.floor(Math.random() * waifus.length);
-    const waifu = waifus.splice(randomIndex, 1)[0];
+    this.fetchWaifu();
     this.setState({
-      waifu,
       added: true,
     });
   }

@@ -3,13 +3,9 @@ import React from 'react';
 
 const AddCard = ({ handleAdd }) => (
   <div>
-    <button
-      type="button"
-      onClick={handleAdd}
-      className="btn btn-outline-secondary"
-    >
+    <h2 className="center click" onClick={handleAdd}>
       Generate Waifu
-    </button>
+    </h2>
   </div>
 );
 

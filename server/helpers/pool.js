@@ -1,9 +1,3 @@
-const generateRandomNum = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
-const generateRandomFrom = (arr) => {
-  const val = arr[generateRandomNum(0, arr.length - 1)];
-  return val;
-};
-
 // Hair: Green, Twin Drills w/ Long Sidelocks
 // Eyes: Green
 // Body Type: Tall <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Implement
@@ -169,7 +163,7 @@ const hairstyleFront = [
 const hairstyleBack = [
   'tight bun',
   'loose bun',
-  'deux mandu',
+  'twin mandu buns',
   'a french braid',
   'a long bob',
   'a short bob',
@@ -421,6 +415,4 @@ module.exports = {
   disposition,
   vice,
   kink,
-  generateRandomNum,
-  generateRandomFrom,
 };

@@ -21,7 +21,7 @@ app.use(express.static(path.join(__dirname, '../client/dist')));
 //   res.send(data);
 // });
 
-app.get('/api/loadWaifus', (req, res) => {
+app.get('/api/loadWaifu', (req, res) => {
   const randomWaifu = new Waifu();
   res.send(randomWaifu);
 });

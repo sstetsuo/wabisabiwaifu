@@ -6,8 +6,6 @@
   "scripts": {
     "test": "jest",
     "react-dev": "webpack -d --watch",
-    "seed": "node ./database/seed.js",
-    "reset": "node ./database/reset.js",
     "start": "nodemon server"
   },
   "author": "sstetsuo",

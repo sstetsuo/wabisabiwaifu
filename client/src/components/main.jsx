@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
+// import $ from 'jquery';
 import CardSpec from './cardSpec';
 import AddCard from './addCard';
+import Waifu from '../models/Waifu';
 
 class Main extends Component {
   constructor(props) {
@@ -19,9 +20,8 @@ class Main extends Component {
   }
 
   fetchWaifu() {
-    $.get('/api/loadWaifu', (waifu) => {
-      this.setState({ waifu });
-    });
+    const waifu = new Waifu();
+    this.setState({ waifu });
   }
 
   handleAdd() {

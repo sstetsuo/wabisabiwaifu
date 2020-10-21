@@ -16,6 +16,7 @@ strong {
 }
 
 h2 {
+  font-size: xx-large;
   margin-top: 0.5em;
   padding-top: 0.5em;
 }
@@ -28,7 +29,10 @@ h2 {
   font-size: xx-large;
 }
 
-.click {
+.underline {
   text-decoration: underline;
-  color: #e81c4f;
+}
+
+.clickable {
+  cursor: pointer;
 }

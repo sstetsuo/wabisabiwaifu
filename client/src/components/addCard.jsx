@@ -3,7 +3,7 @@ import React from 'react';
 
 const AddCard = ({ handleAdd }) => (
   <div>
-    <h2 className="center click" onClick={handleAdd}>
+    <h2 className="center underline clickable" onClick={handleAdd}>
       Generate Waifu
     </h2>
   </div>

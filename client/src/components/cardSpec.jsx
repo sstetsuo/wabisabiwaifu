@@ -4,7 +4,6 @@ const CardSpec = ({ handleAdd, waifu }) => (
   <div key={waifu.id} className="clickable" onClick={handleAdd}>
     <div>
       <h2>{waifu.name}</h2>
-      {/* <p>{`Age ${waifu.age}`}</p> */}
       <table>
         <tbody>
           <tr>

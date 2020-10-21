@@ -1,12 +1,7 @@
 ## wabisabiwaiu
 
-### Reqs
-> mongo
-
 ### Installation for testing or lurking
-> Peep the seeder ;)
-
-> Run scripts found in package.json
+> npm install
 
 ### TLDR or noob
 Build with (for changes; contains watch flag)

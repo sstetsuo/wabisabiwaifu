@@ -42,12 +42,8 @@ class Main extends Component {
     }
 
     return (
-      <div className="container-fluid d-flex justify-content-center">
-        <div className="row">
-          <div className="col-md-4">
-            {card}
-          </div>
-        </div>
+      <div>
+        {card}
       </div>
     );
   }

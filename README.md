@@ -1,5 +1,7 @@
 ## wabisabiwaiu
 
+Demo at https://wabisabiwaifu.netlify.app/
+
 ### Installation for testing or lurking
 > npm install
 
